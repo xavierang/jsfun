@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya);
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -9,6 +10,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 
 html {
     color: #222;
@@ -94,10 +96,84 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html,
+body,
+.top,
+main,
+section,
+footer{
+    height:100%;
+}
+
+
+body{
+    font-family:'Alegreya',sans-serif;
+}
+
+header {
+    background:#FF3A33;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+}
+
+ul{
+    float:right;
+}
+
+li{
+    display:inline;
+    padding:0em 1em 0em 1em;
+}
+
+.logo {
+    float:left;
+}
+
+.logo {
+    background:#FFA3A5;
+}
+
+h1 {
+    font-size:3em;
+    font-weight:900;
+}
+
+.top{
+    background: url('../img/background.jpg');
+    background-size:cover;
+    height:100%;
+}
+
+.central-box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    text-align:center;
+}
+
+section{
+    text-align:center;
+    padding-top:54px;
+}
+
+.score {
+    font-size:4em;
+}
 
 
 
 
+.dark{
+    background-color:black;
+}
+
+.light-switch{
+    background-color:pink;
+}
 
 
 
