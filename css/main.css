@@ -118,11 +118,11 @@ header {
     z-index:999;
 }
 
-ul{
+ul.nav-bar{
     float:right;
 }
 
-li{
+.nav-bar li{
     display:inline;
     padding:0em 1em 0em 1em;
 }
@@ -164,18 +164,25 @@ section{
     font-size:4em;
 }
 
-
-
+.light-switch{
+    background-color:pink;
+}
 
 .dark{
     background-color:black;
 }
 
-.light-switch{
-    background-color:pink;
+.mega-menu{
+    position:relative;
+    top:54px;
+    background-color:#2A92FF;
+    color:white;
+    display:none;
 }
 
-
+.mega-menu ul{
+    margin:0;
+}
 
 
 

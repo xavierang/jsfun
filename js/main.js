@@ -1,28 +1,39 @@
+var newTotal=0;
+
+function changeTotal(points){
+	newTotal = newTotal+points;
+	if(points==0){
+		newTotal=0;
+	}
+	return newTotal;
+}
+
+
 $(document).ready(function(){
 
 	var counter=0;
 	$('.add1').click(function(){
-		counter=counter+1;
+		counter=changeTotal(1);
 		$('.score').html(counter);
 	});
 
 	$('.add2').click(function(){
-		counter=counter+2;
+		counter=changeTotal(2);
 		$('.score').html(counter);
 	});
 
 	$('.add3').click(function(){
-		counter=counter+3;
+		counter=changeTotal(3);
 		$('.score').html(counter);
 	})
 
 	$('.sub1').click(function(){
-		counter=counter-1;
+		counter=changeTotal(-1);
 		$('.score').html(counter);
 	})
 
 	$('.reset').click(function(){
-		counter=0;
+		counter=changeTotal(0);
 		$('.score').html(counter);
 	});
 
@@ -54,4 +65,11 @@ $(document).ready(function(){
 			lights="on";
 		}
 	});
+
+	$('header ul li a').hover(function(){
+		$('.mega-menu').slideDown();
+	}, function(){
+		$('.mega-menu').slideUp();
+	});
+	
 });
